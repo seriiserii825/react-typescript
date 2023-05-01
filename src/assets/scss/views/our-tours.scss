@@ -35,11 +35,25 @@
     font-size: 2rem;
     color: var(--text-color);
   }
+  &__price {
+    font-weight: bold;
+    color: var(--blue);
+  }
   &__content {
     margin-bottom: 3.2rem;
     padding: 0 1.6rem;
     font-size: 1.4rem;
     line-height: 1.5;
     color: var(--text-light);
+  }
+  &__read-more {
+    font-weight: bold;
+    color: var(--blue);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

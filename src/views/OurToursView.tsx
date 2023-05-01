@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {ITour} from "../interface/ITour";
 import axiosInstance from "../helpers/axios-instance";
 import Loading from "../components/globals/Loading";
+import OurToursItem from "../components/projects/our-tours/OurToursItem";
 
 function OurToursView() {
     const [loading, setLoading] = useState<boolean>(true);
@@ -29,17 +30,7 @@ function OurToursView() {
             {loading ? <Loading/> : (
                 <div className={'our-tours__body'}>
                     {tours.length > 0 ? tours.map((tour: ITour) => (
-                        <article className={'our-tours__item'} key={tour.id}>
-                            <div className={'our-tours__img'}>
-                                <img src={tour.image} alt=""/>
-                            </div>
-                            <header className="our-tours__header">
-                                <h2 className="our-tours__title">{tour.name}</h2>
-                                <div className="our-tours__price">{tour.price}</div>
-                            </header>
-                            <div className="our-tours__content">{tour.info}</div>
-                            <button className="btn">Not interested</button>
-                        </article>
+                        <OurToursItem tour={tour} key={tour.id}/>
                     )) : (<h2>No tours available...</h2>)
                     }
                 </div>
