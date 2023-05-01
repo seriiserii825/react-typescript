@@ -1,0 +1,29 @@
+.home-intro {
+  position: relative;
+  margin-bottom: 11.8rem;
+  font-size: 16px;
+  line-height: 24x;
+  height: 110.2rem;
+  overflow: hidden;
+  @media screen and (max-width: 1800px) {
+    margin-bottom: 3rem;
+    height: 120rem;
+    font-size: 20px;
+  }
+  @media screen and (max-width: 576px) {
+    height: 60rem;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    @media screen and (max-width: 576px) {
+      top: 50%;
+      height: 50%;
+    }
+  }
+}

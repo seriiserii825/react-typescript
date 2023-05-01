@@ -1,0 +1,11 @@
+@import "partials/fonts";
+@import "partials/variables";
+@import "partials/mixins";
+// @import "../libs/slick/slick/slick.scss";
+@import "partials/base";
+
+@import "blocks/globals/scrollbar.scss";
+@import "blocks/header/main-header";
+@import "blocks/navigation/main-menu";
+@import "blocks/globals/btn";
+@import "blocks/projects/remember-birthday";

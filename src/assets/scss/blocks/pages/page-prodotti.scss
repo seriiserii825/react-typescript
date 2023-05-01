@@ -1,0 +1,7 @@
+.page-products {
+  padding-top: 3rem;
+  @media screen and (max-width: 576px) {
+    padding-top: 0;
+  }
+}
+

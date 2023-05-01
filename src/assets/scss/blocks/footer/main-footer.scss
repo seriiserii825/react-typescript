@@ -1,0 +1,106 @@
+.main-footer {
+  padding: 3.7rem 0 9.8rem;
+  color: $text-color;
+  background: white;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10rem 0;
+    @media screen and (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+    @media screen and (max-width: 768px) {
+      display: block;
+      padding: 6rem 0;
+    }
+  }
+  &__logo {
+    margin-bottom: 1.8rem;
+  }
+  &__item {
+    position: relative;
+    padding: 0 6.4rem;
+    width: 33%;
+    @media screen and (max-width: 1200px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 6rem;
+      width: auto;
+      text-align: center;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1px;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(201, 201, 201, 0.19931722689075626) 0%, rgba(201, 201, 201, 1) 50%, rgba(201, 201, 201, 0.2) 100%);
+    }
+    &:last-of-type {
+      @media screen and (max-width: 768px) {
+        margin-bottom: 0;
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
+  &__label {
+    color: #909090;
+  }
+  &__value {
+    margin-bottom: -0.3rem;
+    line-height: 2;
+  }
+  &__hours {
+    .main-footer__value {
+      margin-bottom: 0.5rem;
+    }
+  }
+  &__contacts {
+    padding-top: 0.9rem;
+    li {
+      margin-bottom: 2.5rem;
+      padding-left: 1rem;
+      .main-footer__label {
+        margin-bottom: 0.2rem;
+      }
+    }
+  }
+  &__form {
+    padding-top: 0.9rem;
+    padding-left: 1rem;
+    .main-footer__value {
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__bottom {
+    text-align: center;
+  }
+  .copyright {
+    position: relative;
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(201, 201, 201, 0.19931722689075626) 0%, rgba(201, 201, 201, 1) 50%, rgba(201, 201, 201, 0.2) 100%);
+    }
+    a {
+      display: block;
+      text-decoration: underline;
+      color: $text-light;
+    }
+  }
+}
+.map {
+  margin-bottom: 13.3rem;
+  height: 40rem;
+}
