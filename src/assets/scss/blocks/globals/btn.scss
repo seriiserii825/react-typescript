@@ -12,6 +12,6 @@
   transition: all .4s;
   cursor: pointer;
   &:hover {
-    border-color: black;
+    background: var(--accent-hover);
   }
 }
