@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {ITour} from "../../../interface/ITour";
 
-function OurToursItem({tour}: { tour: ITour }) {
+function OurToursItem({tour, removeTour}: { tour: ITour }) {
     const [read_more, setReadMore] = useState<boolean>(true);
     return (
         <article className={'our-tours__item'}>
@@ -18,7 +18,7 @@ function OurToursItem({tour}: { tour: ITour }) {
                     ' More' : 'Show' +
                     ' Less'}</button>
             </div>
-            <button className="btn">Not interested</button>
+            <button onClick={() => removeTour(tour.id)} className="btn">Not interested</button>
         </article>
     );
 }
