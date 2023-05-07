@@ -8,7 +8,7 @@ function JobsView() {
     const [jobs, setJobs] = useState<IJob[]>(jobs_list);
     const [value, setValue] = useState<number>(0);
     return (
-        <div className={'jobs-view'}>
+        <div className={'jobs-view full-height'}>
             <h1 className="jobs-view__title">Jobs</h1>
             {jobs.length === 0 ? (
                 <h3>no jobs</h3>
