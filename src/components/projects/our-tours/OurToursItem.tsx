@@ -14,11 +14,16 @@ function OurToursItem({tour, removeTour}: { tour: ITour }) {
             </header>
             <div className="our-tours__content">
                 {read_more ? tour.info.substring(0, 200) : tour.info}
-                <button className={'our-tours__read-more'} onClick={() => setReadMore(!read_more)}>{read_more ? 'Read' +
-                    ' More' : 'Show' +
-                    ' Less'}</button>
+                <button
+                    className={'our-tours__read-more'}
+                    onClick={() => setReadMore(!read_more)}>
+                    {read_more ? 'Read' + ' More' : 'Show' + ' Less'}
+                </button>
             </div>
-            <button onClick={() => removeTour(tour.id)} className="btn">Not interested</button>
+            <button
+                onClick={() => removeTour(tour.id)}
+                className="btn">Not interested
+            </button>
         </article>
     );
 }

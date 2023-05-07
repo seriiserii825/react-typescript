@@ -9,6 +9,7 @@ function MainHeader() {
             <ul className="main-menu">
                 <Link to={EMenu.REMEMBERBIRTHDAY}>Remember Birthday</Link>
                 <Link to={EMenu.OURTOURS}>Our Tours</Link>
+                <Link to={EMenu.JOBS}>Jobs</Link>
             </ul>
         </div>
     );
