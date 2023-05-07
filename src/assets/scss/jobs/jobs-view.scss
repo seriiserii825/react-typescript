@@ -1,0 +1,24 @@
+.jobs-view {
+  padding: 6rem 0;
+  &__title {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -1rem;
+  }
+  &__menu {
+    li {
+      margin-bottom: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+  &__body {
+
+  }
+}

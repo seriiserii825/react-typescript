@@ -3,7 +3,7 @@ import JobsMenu from "../components/projects/jobs/JobsMenu";
 import {IJob} from "../interface/IJob";
 import jobs_list from "../data/jobs";
 
-function JobsView(props) {
+function JobsView() {
     const [jobs, setJobs] = useState<IJob[]>(jobs_list);
     return (
         <div className={'jobs-view'}>
@@ -11,7 +11,13 @@ function JobsView(props) {
             {jobs.length === 0 ? (
                 <h3>no jobs</h3>
             ) : (
-                <JobsMenu jobs={jobs}/>
+                <div className={'jobs-view__wrap'}>
+                    <div className="jobs-view__menu">
+                        <JobsMenu jobs={jobs}/>
+                    </div>
+                    <div className="jobs-view__body">
+                    </div>
+                </div>
             )}
         </div>
     );
