@@ -1,0 +1,17 @@
+.job {
+  &__title {
+    margin-bottom: 3.2rem;
+  }
+  &__company {
+    display: inline-block;
+    margin-bottom: 1.6rem;
+    padding: 1.2rem;
+    background: var(--accent);
+  }
+  &__dates {
+    margin-bottom: 3.2rem;
+  }
+  &__duties {
+    margin-bottom: 3.2rem;
+  }
+}

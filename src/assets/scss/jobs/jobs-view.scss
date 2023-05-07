@@ -9,16 +9,13 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 0 -1rem;
+    margin: 0 auto;
+    max-width: 1200px;
   }
   &__menu {
-    li {
-      margin-bottom: 1rem;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
+    width: 30%;
   }
   &__body {
-
+    width: 70%;
   }
 }
